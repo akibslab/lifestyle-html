@@ -60,6 +60,7 @@
 			variableWidth: true,
 			arrows: false,
 			autoplay: true,
+			speed: 3000,
 			autoplaySpeed: 2000,
 			// cssEase: "linear",
 		});
@@ -90,13 +91,6 @@
 		});
 	}
 
-	// Start Slick Nav
-	$("#mobile-menu").slicknav({
-		prependTo: ".show-mobile-menu",
-		allowParentLinks: true,
-	});
-	// End Slick Nav
-
 	// Sticky Menu
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();
@@ -106,68 +100,4 @@
 			$(".header-area").addClass("sticky");
 		}
 	});
-
-	// WOW active
-	var wow = new WOW({
-		boxClass: "wow",
-		animateClass: "animated",
-		offset: 0,
-		mobile: true,
-		live: true,
-	});
-	wow.init();
-	//  End Wow
-
-	// One Page Nav
-	var top_offset = $(".header-area").height() - 10;
-	$(".main-menu").onePageNav({
-		currentClass: "active",
-		scrollOffset: top_offset,
-	});
-
-	//  Scroll Up
-	$.scrollUp({
-		scrollName: "scrollUp",
-		topDistance: "300",
-		topSpeed: 300,
-		animation: "fade",
-		animationInSpeed: 200,
-		animationOutSpeed: 200,
-		scrollText: '<i class="fa fa-arrow-up"></i>',
-		activeOverlay: false,
-	});
-	//   Scroll Up
-
-	// Magnific Popup
-	$(".video-play").magnificPopup({
-		type: "iframe",
-	});
-	//   End  Magnific Popup
-
-	//for menu active class
-	$(".portfolio-tab button").on("click", function (event) {
-		$(this).siblings(".active").removeClass("active");
-		$(this).addClass("active");
-		event.preventDefault();
-	});
-
-	// Smooth Scroll for IE/ EDGE/ SAFARI
-	$("a").on("click", function (event) {
-		if (this.hash !== "") {
-			event.preventDefault();
-
-			var hash = this.hash;
-
-			$("html, body").animate(
-				{
-					scrollTop: $(hash).offset().top,
-				},
-				800,
-				function () {
-					window.location.hash = hash;
-				}
-			);
-		}
-	});
-	// End Smooth Scroll for IE/ EDGE/ SAFARI
 })(jQuery);
