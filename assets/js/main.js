@@ -51,6 +51,45 @@
 		}
 	});
 
+	if ($(".winners_portfolio").length > 0) {
+		$(".winners_portfolio").slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			centerMode: true,
+			variableWidth: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 2000,
+			// cssEase: "linear",
+		});
+	}
+	if ($(".winners_active_2").length > 0) {
+		$(".winners_active_2").slick({
+			infinite: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			arrows: false,
+			speed: 5000,
+			autoplay: true,
+			autoplaySpeed: 0,
+			cssEase: "linear",
+		});
+	}
+	if ($(".winners_active_3").length > 0) {
+		$(".winners_active_3").slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			centerMode: true,
+			arrows: false,
+			speed: 5000,
+			autoplay: true,
+			autoplaySpeed: 0,
+			cssEase: "linear",
+		});
+	}
+
 	// Start Slick Nav
 	$("#mobile-menu").slicknav({
 		prependTo: ".show-mobile-menu",
