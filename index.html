@@ -50,7 +50,7 @@
             <div class="site_logo">
               <a href="index.html" class="logo"><img src="./assets/img/logo/logo.png" alt="Logo"></a>
             </div>
-            <nav class="site_menu">
+            <nav class="site_menu d-none d-lg-block">
               <ul>
                 <li><a href="#">Giveaways</a></li>
                 <li><a href="#">Member Benefits</a></li>
@@ -63,11 +63,30 @@
               <a href="#" class="tj-inline-btn">Log In</a>
               <a href="#" class="tj-btn">Sign Up</a>
             </div>
+
+            <div class="menu_bar d-lg-none">
+              <button><i class="fa-regular fa-bars"></i></button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <div class="side_menu">
+    <div class="mobile_menu_top">
+      <button class="close"><i class="fa-solid fa-times"></i></button>
+      <a href="index.html" class="logo"><img src="./assets/img/logo/logo.png" alt="Logo"></a>
+    </div>
+    <nav class="mobile_menu">
+      <ul>
+        <li><a href="#">Giveaways</a></li>
+        <li><a href="#">Member Benefits</a></li>
+        <li><a href="#">Winners</a></li>
+        <li><a href="#">charity</a></li>
+      </ul>
+    </nav>
+  </div>
   <!-- end: Header Area -->
 
   <main id="site-content">
@@ -77,15 +96,18 @@
         <div class="row">
           <div class="col">
             <div class="hero_content_wrapper">
-              <h1 class="title"><span>WIN</span> A Car <br> & Become A Member.</h1>
-              <h3 class="subtitle">Australia’s #1 Most Reviewed Giveaways site.</h3>
-              <p class="desc">Enter for a chance to win houses, cars, boats, bikes, cash prizes and holidays.</p>
+              <h1 class="title d-none d-lg-block"><span>WIN</span> A Car <br> & Become A Member.</h1>
+              <h1 class="title d-lg-none">Win A Car <br>anywhere, anytime.</h1>
+              <h3 class="subtitle d-none d-lg-block">Australia’s #1 Most Reviewed Giveaways site.</h3>
+              <p class="desc d-none d-lg-block">Enter for a chance to win houses, cars, boats, bikes, cash prizes and
+                holidays.</p>
+              <p class="desc d-lg-none">Become a member to earn rewards.</p>
 
               <div class="hero_btn">
-                <a href="#" class="tj-btn">BUY TICKETS</a>
+                <a href="#" class="tj-btn">Get Started</a>
               </div>
 
-              <div class="hero_review">
+              <div class="hero_review d-none d-lg-block">
                 <div class="trustpilot">
                   <img src="./assets/img/icons/trustpilot-logo.png" alt="">
                 </div>
@@ -105,6 +127,11 @@
       </div>
     </section>
     <!-- end: Hero Area -->
+    <div class="hero_review d-lg-none">
+      <div class="reviews"></div>
+      <h3 class="subtitle"><span>#1 Rewards Club</span> Australia’s Most Reviewed Online</h3>
+      <div class="review_logo"><img src="./assets/img/hero/review-logo.png" alt=""></div>
+    </div>
 
     <!-- start: Feature Section -->
     <section class="feature-section">
@@ -139,8 +166,13 @@
     </section>
     <!-- end: Feature Section -->
 
+
+    <div class="bottom_feature_img d-lg-none">
+      <img src="./assets/img/bottom-feature.png" alt="">
+    </div>
+
     <!-- start: Brands Section -->
-    <section class="brands-section">
+    <section class="brands-section d-none d-lg-block">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -215,8 +247,13 @@
         <div class="row">
           <div class="col">
             <div class="section_title">
-              <h2 class="title">Enter to WIN A car, Holiday, Tech prizes, Cash & More</h2>
-              <p class="desc">When you sign up to become a VIP Member you get entries into EVERY single draw!</p>
+              <h2 class="title d-none d-lg-block">Enter to WIN A car, Holiday, Tech prizes, Cash & More</h2>
+              <h2 class="title d-lg-none">Enter To Win Cars, Holidays & more</h2>
+
+              <p class="desc d-none d-lg-block">When you sign up to become a VIP Member you get entries into EVERY
+                single draw!</p>
+              <p class="desc d-lg-none">When you sign up to become a VIP Member you get entries into EVERY single draw!
+              </p>
             </div>
           </div>
         </div>
@@ -287,7 +324,7 @@
           </div>
         </div>
       </div>
-      <div class="next_draw">
+      <div class="next_draw d-none d-lg-block">
         <div class="container">
           <div class="row">
             <div class="col">
@@ -302,36 +339,196 @@
     </section>
     <!-- end: Wining Prize -->
 
+    <!-- MOBILE -->
+    <!-- start: Package Section -->
+    <section class="package-section d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="section_title">
+              <h2 class="title">Signup Here</h2>
+              <ul class="list">
+                <li>✔ Cancel Anytime</li>
+                <li>✔ Billed Monthly</li>
+                <li>✔ No Hidden Costs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-10 offset-xl-1">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="price_package">
+                  <div class="price_top">
+                    <div class="icon">
+                      <img src="./assets/img/icons/circle-icon.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="price_heading">
+                    <h2 class="title">Mini VIP</h2>
+                    <h5 class="subtitle">1 RECURRING ENTRY</h5>
+                    <div class="price">
+                      <h2 class="main">$19</h2>
+                      <span>99</span>
+                    </div>
+                    <p class="text">1 Entry Accumulating</p>
+                  </div>
+
+                  <a href="#" class="price_btn">GET STARTED</a>
+
+                  <ul class="features">
+                    <li>Less Than $1 Per Day</li>
+                    <li>VIP Exclusive Membership Savings</li>
+                    <li>Exclusive Event Access & Vouchers</li>
+                    <li>Billed Monthly. Cancel Anytime</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="price_package popular">
+                  <div class="price_top">
+                    <div class="icon">
+                      <img src="./assets/img/icons/popular-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="top_btn">Most Popular</a>
+                  </div>
+                  <div class="price_heading">
+                    <h2 class="title">Lucky+ VIP</h2>
+                    <h5 class="subtitle">5 RECURRING ENTRIES</h5>
+                    <div class="price">
+                      <h2 class="main">$49</h2>
+                      <span>99</span>
+                    </div>
+                    <p class="text"><span>+3 FREE</span> Entries Accumulating</p>
+                  </div>
+
+                  <a href="#" class="price_btn">GET STARTED</a>
+
+                  <ul class="features">
+                    <li>Less Than $2 Per Day</li>
+                    <li>Ongoing Go+ Rewards Portal Access</li>
+                    <li>10% Store Merch Discounts</li>
+                    <li>Bonus Free Entries that Add Up</li>
+                    <li>Billed Monthly. Cancel Anytime</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="price_package best">
+                  <div class="price_top">
+                    <div class="icon">
+                      <img src="./assets/img/icons/best-icon.svg" alt="">
+                    </div>
+                    <a href="#" class="top_btn">Best Chance</a>
+                  </div>
+                  <div class="price_heading">
+                    <h2 class="title">Premium VIP</h2>
+                    <h5 class="subtitle">15 RECURRING ENTRIES</h5>
+                    <div class="price">
+                      <h2 class="main">$99</h2>
+                      <span>99</span>
+                    </div>
+                    <p class="text"><span>+15 FREE</span> Entries Accumulating</p>
+                  </div>
+
+                  <a href="#" class="price_btn">GET STARTED</a>
+
+                  <ul class="features">
+                    <li>Less Than $3.5 Per Day</li>
+                    <li>Everything in Lucky+ VIP</li>
+                    <li>20% Store Merch Discounts</li>
+                    <li>Bonus Entries That Add Up</li>
+                    <li>Double Your Runner Up Prizes</li>
+                    <li>Billed Monthly. Cancel Anytime</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: Package Section -->
+
+    <!-- MOBILE -->
+    <!-- start: SignUp Phone Section -->
+    <section class="signup-section">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="signup_wrapper">
+              <div class="phone">
+                <img src="./assets/img/icons/phone.png" alt="Phone">
+              </div>
+              <h3 class="title">Signup By Phone</h3>
+              <a href="tel:1300 512 490" class="number">1300 512 490</a>
+              <span class="note">Customer Support<br>Valid to all Australian residents, except SA</span>
+
+              <div class="we_accept">
+                <span class="title">We Accept:</span>
+                <img src="./assets/img/icons/g-pay.png" alt="">
+                <img src="./assets/img/icons/apple-pay.png" alt="">
+                <img src="./assets/img/icons/paypal.png" alt="">
+                <img src="./assets/img/icons/american-express.png" alt="">
+                <img src="./assets/img/icons/discover.png" alt="">
+                <img src="./assets/img/icons/master.png" alt="">
+                <img src="./assets/img/icons/visa.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end: SignUp Phone Section -->
+
     <!-- start: Lottery Section -->
     <section class="lottery-section">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 offset-lg-1">
             <div class="lottery_content">
-              <h2 class="title">better Odds Than The Lottery.</h2>
+              <h2 class="title d-none d-lg-block">better Odds Than The Lottery.</h2>
+              <h2 class="title d-lg-none">Members Benefits Over 1,000+ Stores </h2>
+              <h6 class="subtitle d-lg-none"><span>100% access</span> to our <span>mates rates</span> discounts.</h6>
 
-              <ul>
+              <div class="lottery_img d-lg-none">
+                <img src="./assets/img/lottery/lottery.png" alt="">
+              </div>
+
+              <ul class="d-none d-lg-block">
                 <li>Know your number is in the hat with our <span>fair play</span> ball selection technology</li>
                 <li>VIP Members accumulate Entries That <span>NEVER Expire</span></li>
                 <li>Priority Access to EXCLUSIVE Offers & Club Discounts</li>
                 <li>Support <span>Australian Charities</span> In Need</li>
               </ul>
 
-              <p class="text"><span>Join our VIP Members Club</span> with LIFESTYLE GO+ and receive 100% access to our
+              <p class="text d-none d-lg-block"><span>Join our VIP Members Club</span> with LIFESTYLE GO+ and receive
+                100% access to our
                 mates rates
                 discounts saving you hundreds and even thousands of dollars if you don't win first prize.</p>
-              <p class="text">It’s a Win-Win. 2nd and 3rd prizes are typically gift cards topped up so you can spend
+              <p class="text d-none d-lg-block">It’s a Win-Win. 2nd and 3rd prizes are typically gift cards topped up so
+                you can spend
                 your cash as you wish with some of Australia’s most reputable brands and businesses who provide us the
                 coupon codes you unlock with a subscription access. Plus, we also donate some of the proceeds to our
                 favorite Aussie charities.</p>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-none d-lg-block">
             <div class="lottery_img">
               <img src="./assets/img/lottery/lottery.png" alt="">
             </div>
           </div>
         </div>
+      </div>
+      <div class="lottery_content d-lg-none">
+        <ul>
+          <span class="title">Why Choose Us?</span>
+          <li>Know your number is in the hat with our <span>fair play</span> ball selection technology</li>
+          <li>VIP Members accumulate Entries That <span>NEVER Expire</span></li>
+          <li>Priority Access to EXCLUSIVE Offers & Club Discounts</li>
+          <li>Support <span>Australian Charities</span> In Need</li>
+        </ul>
       </div>
     </section>
 
@@ -540,7 +737,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-10 offset-lg-1">
+          <div class="col-xl-10 offset-xl-1">
             <div class="row">
               <div class="col-lg-4">
                 <div class="price_package">

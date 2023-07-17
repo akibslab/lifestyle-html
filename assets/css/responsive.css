@@ -15,10 +15,214 @@
 
 /* Large devices (desktops, 992px to 1199px) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.signup_wrapper .we_accept {
+		gap: 27px;
+	}
+	.wining-prize .section_title {
+		margin-bottom: 100px;
+	}
+	.wining_prize_wrapper.owl-carousel .owl-nav {
+		right: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 /* Medium devices (tablets, 768px to 991px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+	.header-area {
+		padding: 10px 0;
+	}
+	.wining-prize .section_title {
+		margin-bottom: 100px;
+	}
+	.wining_prize_wrapper.owl-carousel .owl-nav {
+		right: 0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.coming_soon {
+		right: 50%;
+		transform: translateX(50%);
+		text-align: center;
+	}
+
+	.coming_soon .app {
+		display: inline-block;
+	}
+	.hero_review {
+		background-color: rgba(214, 205, 190, 0.25);
+		max-width: 460px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 20px;
+		padding: 20px 10px 25px 10px;
+	}
+	.hero_review .subtitle {
+		font-size: 20px;
+		line-height: 30px;
+		text-align: center;
+		margin-top: 15px;
+		color: rgba(1, 4, 34, 1);
+		margin-top: 20px;
+	}
+	.hero_review .subtitle span {
+		display: block;
+		font-weight: 500;
+		color: rgba(76, 80, 191, 1);
+	}
+	.feature-section {
+		padding-top: 20px;
+		padding-bottom: 30px;
+	}
+
+	.feature-section .container {
+		max-width: 452px;
+		border: 1px solid rgba(186, 186, 186, 0.5);
+		border-radius: 20px;
+		padding-top: 30px;
+	}
+
+	.single_feature {
+		max-width: 365px;
+		width: 100%;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 45px;
+	}
+
+	.single_feature .icon {
+		max-width: 95px;
+		margin-right: 25px;
+		margin-bottom: 0;
+		margin-left: 0;
+	}
+
+	.single_feature .feature_title {
+		max-width: 240px;
+		font-size: 18px;
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.single_feature .feature_title span {
+		font-size: 30px;
+		font-weight: 600;
+	}
+	.wining-prize {
+		background-color: var(--color-white);
+		padding-top: 30px;
+	}
+	.wining-prize .section_title .title {
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+	.wining-prize .section_title .desc {
+		font-size: 16px;
+	}
+	.wining_prize_wrapper {
+		padding-bottom: 20px;
+	}
+	.package-section {
+		background-color: var(--color-white);
+		padding-top: 0;
+		padding-bottom: 25px;
+	}
+
+	.package-section .section_title {
+		text-align: left;
+	}
+
+	.package-section .section_title .title {
+		font-size: 38px;
+		margin-bottom: 7px;
+	}
+
+	.package-section .section_title .list li {
+		font-size: 16px;
+		margin: 0 5px;
+	}
+	.price_package {
+		max-width: 480px;
+		width: 100%;
+		height: auto;
+		padding: 30px 40px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	.price_package .price_heading .title {
+		font-size: 32px;
+	}
+	.price_package .price_heading .price .main {
+		font-size: 64px;
+	}
+
+	.price_package .price_btn {
+		margin-bottom: 30px;
+	}
+	.signup-section {
+		background-color: var(--color-white);
+		padding: 0;
+	}
+	.signup_wrapper .phone,
+	.signup_wrapper .title,
+	.signup_wrapper .number {
+		margin-bottom: 15px;
+	}
+	.signup_wrapper .we_accept {
+		flex-wrap: wrap;
+		gap: 13px;
+		max-width: 380px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.signup_wrapper .we_accept .title {
+		max-width: 100%;
+		width: 100%;
+	}
+	.lottery-section {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+	.lottery_content .title {
+		font-size: 40px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 0;
+	}
+	.lottery_content .subtitle {
+		text-align: center;
+		font-size: 16px;
+		color: rgba(17, 17, 17, 1);
+		margin-bottom: 20px;
+	}
+	.lottery_content .subtitle span {
+		color: rgba(0, 102, 255, 1);
+	}
+	.lottery_img {
+		margin-bottom: 50px;
+	}
+	.lottery_content ul {
+		background-color: rgba(234, 232, 222, 1);
+		padding: 50px 32px;
+		margin-bottom: 0;
+	}
+	.lottery_content ul .title {
+		display: block;
+		font-weight: 600;
+		font-size: 36px;
+		margin-bottom: 53px;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */

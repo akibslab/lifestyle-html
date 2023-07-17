@@ -28,7 +28,7 @@
 					0: {
 						items: 1,
 					},
-					767: {
+					768: {
 						items: 2,
 					},
 					992: {
@@ -71,9 +71,11 @@
 			slidesToShow: 5,
 			slidesToScroll: 1,
 			arrows: false,
+			variableWidth: true,
 			speed: 5000,
 			autoplay: true,
 			autoplaySpeed: 0,
+			pauseOnHover: false,
 			cssEase: "linear",
 		});
 	}
@@ -83,10 +85,12 @@
 			slidesToShow: 4,
 			slidesToScroll: 1,
 			centerMode: true,
+			variableWidth: true,
 			arrows: false,
 			speed: 5000,
 			autoplay: true,
 			autoplaySpeed: 0,
+			pauseOnHover: false,
 			cssEase: "linear",
 		});
 	}
@@ -99,5 +103,12 @@
 		} else {
 			$(".header-area").addClass("sticky");
 		}
+	});
+
+	$(".menu_bar button").on("click", function () {
+		$(".side_menu").addClass("open");
+	});
+	$(".side_menu .close").on("click", function () {
+		$(".side_menu").removeClass("open");
 	});
 })(jQuery);
