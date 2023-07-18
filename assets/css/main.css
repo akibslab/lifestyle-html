@@ -716,6 +716,10 @@ textarea:focus {
 }
 .lottery_content ul li span {
 	font-weight: 700;
+	text-transform: capitalize;
+}
+.lottery_content ul li a {
+	text-decoration: underline;
 }
 
 .lottery_content ul li:not(:last-child) {
@@ -836,17 +840,23 @@ textarea:focus {
 }
 .winners_portfolio .portfolio_item .portfolio_content {
 	position: relative;
-	border-radius: 24px;
-	overflow: hidden;
 	z-index: 1;
 	height: 100%;
 }
-.winners_portfolio .portfolio_item .portfolio_content img {
+.winners_portfolio .portfolio_item .portfolio_content .content_thumb {
+	position: relative;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	border-radius: 24px;
+	overflow: hidden;
+}
+.winners_portfolio .portfolio_item .portfolio_content .content_thumb img {
 	height: 100%;
 	object-fit: cover;
 }
 
-.winners_portfolio .portfolio_item .portfolio_content:after {
+.winners_portfolio .portfolio_item .portfolio_content .content_thumb::after {
 	position: absolute;
 	content: "";
 	width: 100%;
@@ -892,13 +902,18 @@ textarea:focus {
 	position: relative;
 	max-width: 364px;
 	height: 203px;
-	border-radius: 12px;
-	overflow: hidden;
 	margin: 0 12px;
 	background-color: #02000c;
 }
 
-.winners_portfolio_small .portfolio_item:after {
+.winners_portfolio_small .portfolio_item .portfolio_thumb {
+	position: relative;
+	border-radius: 12px;
+	overflow: hidden;
+	height: 100%;
+}
+
+.winners_portfolio_small .portfolio_item .portfolio_thumb:after {
 	position: absolute;
 	content: "";
 	left: 0;
