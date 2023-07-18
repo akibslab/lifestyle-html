@@ -556,6 +556,9 @@ textarea:focus {
 	line-height: 1.2;
 	margin-bottom: 20px;
 }
+.wining-prize .section_title .desc span {
+	color: #0066ff;
+}
 .wining-prize .section_title .desc {
 	font-size: 20px;
 }
@@ -1119,12 +1122,7 @@ textarea:focus {
 .price_package.popular .price_heading .title,
 .price_package.popular .price_heading .price .main,
 .price_package.popular .price_heading .price span,
-.price_package.popular .features li,
-.price_package.best .price_heading .title,
-.price_package.best .price_heading .price .main,
-.price_package.best .price_heading .price span,
-.price_package.best .price_heading .text,
-.price_package.best .features li {
+.price_package.popular .features li {
 	color: var(--color-white);
 }
 .price_package.popular .price_heading .subtitle {
@@ -1145,17 +1143,17 @@ textarea:focus {
 }
 
 .price_package.best {
-	background-color: #01261f;
+	background-color: #ffc700;
 }
 .price_package.best .price_top .top_btn {
-	background-color: #abffdc;
+	background-color: #fff09f;
 	color: #000;
 }
 .price_package.best .price_heading .subtitle {
-	color: rgba(255, 255, 255, 0.81);
+	color: rgba(49, 49, 49, 0.81);
 }
 .price_package.best .price_heading .text span {
-	color: #eeff87;
+	color: rgba(97, 71, 255, 1);
 }
 .price_package.best .features li::before {
 	background-image: url(../img/icons/best-check.svg);
@@ -1457,7 +1455,7 @@ textarea:focus {
 	margin-bottom: 0;
 }
 .free_entries_btn {
-	background-color: rgba(189, 255, 0, 1);
+	background-color: rgba(255, 214, 0, 1);
 	color: rgba(0, 0, 0, 1);
 	display: block;
 	padding: 15px;

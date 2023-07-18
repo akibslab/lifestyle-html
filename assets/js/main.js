@@ -27,6 +27,7 @@
 				responsive: {
 					0: {
 						items: 1,
+						autoWidth: false,
 					},
 					768: {
 						items: 2,
