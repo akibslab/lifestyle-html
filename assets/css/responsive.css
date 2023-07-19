@@ -573,7 +573,7 @@
 		color: #0019f5;
 	}
 	.hero-section {
-		min-height: 950px;
+		min-height: auto;
 		background-image: url(../img/hero/hero-mobile.png) !important;
 	}
 	.hero-section::after {
@@ -583,6 +583,10 @@
 			rgba(0, 64, 80, 0.8) 100%
 		);
 		opacity: 0.8;
+	}
+	.hero_content_wrapper {
+		padding-top: 281px;
+		padding-bottom: 350px;
 	}
 	.hero_content_wrapper .title {
 		font-size: 32px;
@@ -617,6 +621,7 @@
 	.coming_soon {
 		right: 50%;
 		width: 100%;
+		bottom: 110px;
 		transform: translateX(50%);
 		text-align: center;
 	}
@@ -714,6 +719,7 @@
 
 	.package-section .section_title .title {
 		font-size: 38px;
+		font-weight: 700;
 		margin-bottom: 7px;
 	}
 
@@ -730,8 +736,14 @@
 		margin-right: auto;
 		margin-bottom: 20px;
 	}
+	.price_package .price_top {
+		margin-bottom: 13px;
+	}
+	.signup_wrapper .number {
+		font-size: 36px;
+	}
 	.price_package .price_heading .title {
-		font-size: 32px;
+		font-size: 40px;
 	}
 	.price_package .price_heading .price .main {
 		font-size: 64px;
