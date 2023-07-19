@@ -543,6 +543,14 @@
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
 @media only screen and (max-width: 767px) {
+	.header-area.header-absolute {
+		position: absolute;
+		background-color: transparent;
+		border-bottom: 1px solid rgba(218, 221, 234, 0.36);
+	}
+	.site_logo .logo {
+		max-width: 100px;
+	}
 	.header-area {
 		padding: 20px 0;
 	}
@@ -553,13 +561,13 @@
 		font-size: 25px;
 		color: var(--color-white);
 		display: inline-block;
-		margin-left: 25px;
+		margin-left: 15px;
 	}
 	.header_buttons .tj-btn {
 		font-size: 14px;
 		line-height: 20px;
 		font-weight: 500;
-		padding: 17px 40px;
+		padding: 15px 30px;
 		background-color: #fff;
 		border-radius: 30px;
 		color: #0019f5;
