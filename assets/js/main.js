@@ -112,4 +112,7 @@
 	$(".side_menu .close").on("click", function () {
 		$(".side_menu").removeClass("open");
 	});
+
+	// background video
+	$("#hero-video").vide();
 })(jQuery);
