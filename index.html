@@ -92,9 +92,11 @@
 
   <main id="site-content">
     <!-- start: Hero Area -->
-    <section class="hero-section d-flex align-items-center" id="hero-video"
-      data-vide-bg="mp4: ./assets/img/video/lifestyle-go-hero-video.mp4, poster: ./assets/img/hero/hero-img.png"
-      data-vide-options="posterType: png, loop: true, muted: true">
+    <section class="hero-section d-flex align-items-center" data-background="./assets/img/hero/hero-img.png">
+
+      <video autoplay muted loop>
+        <source src="./assets/img/video/lifestyle-go-hero-video.mp4" type="video/mp4">
+      </video>
       <div class="container">
         <div class="row">
           <div class="col">
@@ -1413,9 +1415,6 @@
 
   <!-- Slick Slider -->
   <script src="assets/js/slick.min.js"></script>
-
-  <!-- Vide -->
-  <script src="assets/js/vide.min.js"></script>
 
   <!-- Main -->
   <script src="assets/js/main.js"></script>
