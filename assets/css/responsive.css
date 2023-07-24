@@ -539,6 +539,9 @@
 	.footer_bottom_content .copyright_text {
 		text-align: center;
 	}
+	.feature-section .f-item:not(:last-child)::after {
+		display: none;
+	}
 }
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
@@ -1124,6 +1127,9 @@
 	}
 	.footer_bottom_content .copyright_text {
 		text-align: center;
+	}
+	.feature-section .f-item:not(:last-child)::after {
+		display: none;
 	}
 }
 

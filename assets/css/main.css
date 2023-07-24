@@ -472,6 +472,20 @@ textarea:focus {
 	padding-top: 25px;
 	padding-bottom: 50px;
 }
+.feature-section .f-item {
+	position: relative;
+}
+
+.feature-section .f-item:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 130px;
+	border: 1px dashed #001aff;
+}
 .single_feature {
 	text-align: center;
 	padding: 18px 20px;
@@ -762,15 +776,26 @@ textarea:focus {
 .clients_wrapper {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	padding-bottom: 30px;
 }
-
 .clients_wrapper .title {
 	line-height: 1;
 	margin-bottom: 0;
 	color: rgba(97, 97, 97, 1);
-	width: 181px;
+	max-width: 180px;
+	width: 100%;
+	margin-right: 20px;
+}
+.clients_wrapper .clients_logos {
+	width: calc(100% - 200px);
+}
+.clients_wrapper .clients_logos .slick-track {
+	display: flex;
+	align-items: center;
+	height: 35px;
+}
+.clients_wrapper .clients_logos img {
+	margin: 0 60px;
 }
 /* end: Lottery Section */
 

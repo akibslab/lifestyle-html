@@ -96,6 +96,22 @@
 		});
 	}
 
+	if ($(".clients_logos").length > 0) {
+		$(".clients_logos").slick({
+			infinite: true,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			centerMode: true,
+			variableWidth: true,
+			arrows: false,
+			speed: 4000,
+			autoplay: true,
+			autoplaySpeed: 0,
+			pauseOnHover: false,
+			cssEase: "linear",
+		});
+	}
+
 	// Sticky Menu
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();
