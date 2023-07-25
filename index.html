@@ -37,6 +37,14 @@
   <!-- Responsive.css -->
   <link rel="stylesheet" href="assets/css/responsive.css" />
 
+
+  <script>
+    window.__productReviewSettings = {
+      brandId: '3ce1bcf9-080a-5f6a-88ff-137c9482ea06'
+    };
+  </script>
+  <script src="https://cdn.productreview.com.au/assets/widgets/loader.js" async></script>
+
 </head>
 
 <body>
@@ -542,8 +550,22 @@
       </div>
     </section>
 
-    <div class="trust_pilot_widget d-none d-lg-block">
-      <a href="#">Insert TrustPilot or ProductReviews Widget >></a>
+    <div class="trust_pilot_widget d-none d-lg-block overflow-hidden">
+      <div id="pr-reviews-carousel-widget">&nbsp;</div>
+      <script>
+        window.__productReviewCallbackQueue = window.__productReviewCallbackQueue || [];
+        window.__productReviewCallbackQueue.push(function (ProductReview) {
+          ProductReview.use('reviews-carousel', {
+            "identificationDetails": {
+              "type": "single",
+              "strategy": "from-internal-entry-id",
+              "identifier": "399f1a7d-819c-579a-bd39-f8a3ff7e6207"
+            },
+            "container": "#pr-reviews-carousel-widget"
+          });
+        });
+      </script>
+      <!-- <a href="#">Insert TrustPilot or ProductReviews Widget >></a> -->
     </div>
     <!-- end: Lottery Section -->
     <section class="clients-section d-none d-lg-block">
