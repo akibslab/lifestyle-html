@@ -770,8 +770,7 @@ textarea:focus {
 	text-decoration: underline;
 }
 .trust_pilot_widget {
-	margin-left: 7%;
-	margin-bottom: 40px;
+	padding: 100px 0;
 }
 .clients_wrapper {
 	display: flex;

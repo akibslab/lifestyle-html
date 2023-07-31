@@ -550,23 +550,30 @@
       </div>
     </section>
 
-    <div class="trust_pilot_widget d-none d-lg-block overflow-hidden">
-      <div id="pr-reviews-carousel-widget">&nbsp;</div>
-      <script>
-        window.__productReviewCallbackQueue = window.__productReviewCallbackQueue || [];
-        window.__productReviewCallbackQueue.push(function (ProductReview) {
-          ProductReview.use('reviews-carousel', {
-            "identificationDetails": {
-              "type": "single",
-              "strategy": "from-internal-entry-id",
-              "identifier": "399f1a7d-819c-579a-bd39-f8a3ff7e6207"
-            },
-            "container": "#pr-reviews-carousel-widget"
-          });
-        });
-      </script>
-      <!-- <a href="#">Insert TrustPilot or ProductReviews Widget >></a> -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="trust_pilot_widget overflow-hidden">
+            <div id="pr-reviews-carousel-widget">&nbsp;</div>
+            <script>
+              window.__productReviewCallbackQueue = window.__productReviewCallbackQueue || [];
+              window.__productReviewCallbackQueue.push(function (ProductReview) {
+                ProductReview.use('reviews-carousel', {
+                  "identificationDetails": {
+                    "type": "single",
+                    "strategy": "from-internal-entry-id",
+                    "identifier": "399f1a7d-819c-579a-bd39-f8a3ff7e6207"
+                  },
+                  "container": "#pr-reviews-carousel-widget"
+                });
+              });
+            </script>
+            <!-- <a href="#">Insert TrustPilot or ProductReviews Widget >></a> -->
+          </div>
+        </div>
+      </div>
     </div>
+    
     <!-- end: Lottery Section -->
     <section class="clients-section d-none d-lg-block">
       <div class="container">
