@@ -546,6 +546,9 @@
 
 /* X-Small devices (small mobile) (portrait phones, less than 767px) */
 @media only screen and (max-width: 767px) {
+	.trust_pilot_widget {
+		padding: 100px 0 0;
+	}
 	.header-area.header-absolute {
 		position: absolute;
 		background-color: transparent;
